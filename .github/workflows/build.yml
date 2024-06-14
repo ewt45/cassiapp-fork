@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: 1 安装依赖
       run: |
-        sudo apt update && sudo apt install -y libarchive-tools wget ninja
+        sudo apt update && sudo apt install -y libarchive-tools wget ninja-build
     - name: 2 克隆仓库
       uses: actions/checkout@v4
       with:
