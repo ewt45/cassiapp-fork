@@ -36,7 +36,7 @@ jobs:
             ${{ runner.os }}-gradle-
 
     - name: 6 设置cassiaext.cfg
-      run: printf "$(pwd)\n" > cassiaext.cfg
+      run: printf "$(pwd)\n" > app/cassiaext.cfg
       
     - name: 7. 构建
       run: chmod +x ./gradlew && ./gradlew assembleDebug
