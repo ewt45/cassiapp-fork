@@ -38,7 +38,6 @@ jobs:
     - name: 6 设置cassiaext.cfg
       run: |
         git clone https://github.com/cassia-org/cassiaext
-        cd cassiaext
         python3 cassiaext/deps/apply-patches.py
         printf "$(pwd)/cassiaext\n\
         cmake -GNinja -Bbuild -H. \
